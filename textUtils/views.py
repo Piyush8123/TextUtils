@@ -1,23 +1,6 @@
 # I have created this file - Piyush
 from django.http import HttpResponse
 from django.shortcuts import render
-def index(request):
-    return render(request,'index.html')
-    # s =  "Home"'''<br> <h1>Hello Piyush</h1><br>
-    #         Your course of Django is:-
-    #     &nbsp&nbsp<a href = "https://www.youtube.com/watch?v=AepgWsROO4k&list=PLu0W_9lII9ah7DDtYtflgwMwpT3xmjXY9&index=7">Django Course </a><br><br>
-    #     Your courses in udemy are:-
-    #     &nbsp&nbsp<a href = "https://www.udemy.com/home/my-courses/learning/">Udemy Learning</a><br><br>
-    #     Your class link is :-
-    #     &nbsp&nbsp<a href = "https://zoom.us/j/96884117597?pwd=bEtQU1NCMW1iT3ZBM1Z6OWl4M0xpZz09">Zoom Meeting</a><br><br>
-    #     Your search engine:-
-    #     &nbsp&nbsp<a href = "https://www.google.com/">Google</a>'''
-    # return HttpResponse(s)
-
-
-# def about(request):
-#     return HttpResponse("About Piyush")
-
 def analyze(request):
     #Get the Text
     djtext = request.POST.get('text','default')
